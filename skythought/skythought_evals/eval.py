@@ -82,6 +82,10 @@ def main():
     all_logs = ""
     results = {}
 
+    result_dir, result_name = os.path.split(args.output_file)
+    token_usage_dir = os.path.join(result_dir, "token_usage")
+    os.makedirs(token_usage_dir, exist_ok=True)
+
     # Run the Python command for each eval and collect logs
     for eval_name in evals:
         eval_name = eval_name.lower()
@@ -97,6 +101,8 @@ def main():
             eval_name,
             "--tp",
             str(tp),
+            "--result-dir",
+            token_usage_dir,
             "--temperatures",
         ]
         command.extend(temperatures)  # Add temperatures as separate arguments

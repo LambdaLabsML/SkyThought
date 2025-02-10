@@ -74,3 +74,9 @@ models:
         
   NovaSky-AI/Sky-T1-32B-Flash: 
     system_prompt: *sky_t1_system_prompt
+
+  deepseek-ai/DeepSeek-R1-Distill-Llama-8B: 
+    system_prompt: *sky_t1_system_prompt
+
+  /shared/chuan/models/2_prepromptsbest2_64: 
+    system_prompt: *sky_t1_system_prompt
