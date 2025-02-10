@@ -25,11 +25,11 @@ model_name="${model_map[$model]}"
 
 
 tasks=(
-    # aime
-    # gpqa_diamond
-    # math500
-    # mmlu_pro
-    # livecodebench
+    aime
+    gpqa_diamond
+    math500
+    mmlu_pro
+    livecodebench
     olympiadbench_math_en
 )
 
