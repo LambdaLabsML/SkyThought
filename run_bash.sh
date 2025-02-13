@@ -14,6 +14,8 @@ model_map["deepseek8b"]="deepseek-ai/DeepSeek-R1-Distill-Llama-8B"
 model_map["deepseek8b_david_20250205"]="/shared/chuan/models/2_prepromptsbest2_64"
 model_map["sky_32b"]="NovaSky-AI/Sky-T1-32B-Preview"
 model_map["sky_32b_flash"]="NovaSky-AI/Sky-T1-32B-Flash"
+model_map["deepseek8b_unsloth"]="unsloth/DeepSeek-R1-Distill-Llama-8B-unsloth-bnb-4bit"
+model_map["deepseek8b_chuan_20250212"]="/shared/chuan/beacon_cpy_chuan/models_csv_template_conda/uncensored64"
 
 # Validate model
 if [[ -z "${model_map[$model]}" ]]; then

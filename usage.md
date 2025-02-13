@@ -10,6 +10,8 @@ cd SkyThought
 git checkout lambda
 pip install -e .
 
+pip install bitsandbytes
+
 # see run_bash.sh for more details
 # e.g. ./run_bash.sh deepseek8b 8
 ./run_bash.sh $model $tp 
